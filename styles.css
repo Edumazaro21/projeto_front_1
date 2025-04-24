@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --font-main: 'Inter', Arial, sans-serif;
+    --color-text: #333;
+    --color-muted: #999;
+    --color-success: #00a650;
+    --color-link: #3483fa;
+    --color-bg: #f5f5f5;
+    --color-white: #ffffff;
+    --color-strong: #111;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+}
+
+.ofertas-container {
+    background-color: var(--color-white);
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ofertas-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.ofertas-header h2 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.link-carrinho {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.2rem;
+}
+
+.produto {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.produto h3 {
+    font-size: 0.82rem;
+    margin: 0.3rem 0 0.2rem;
+    font-weight: normal;
+    color: var(--color-text);
+}
+
+.preco-antigo {
+    font-size: 0.75rem;
+    color: var(--color-muted);
+    text-decoration: line-through;
+    margin: 0.4rem 0 0.2rem 0;
+}
+
+.preco-atual {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0.3rem 0;
+    color: var(--color-strong);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.centavos {
+    font-size: 0.75rem;
+    vertical-align: top;
+    position: relative;
+    top: 0.1rem;
+    font-weight: normal;
+    margin-left: -0.2rem;
+}
+
+.destaque-entrega {
+    background-color: #f0f0f0;
+    color: var(--color-success);
+    font-size: 0.78rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.desconto {
+    color: var(--color-success);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.parcelamento {
+    font-size: 0.78rem;
+    color: var(--color-text);
+    margin-top: 0.1rem;
+}
+
+.sem-juros {
+    color: var(--color-success);
+    font-weight: 500;
+}
+
+.frete {
+    font-size: 0.90rem;
+    color: var(--color-success);
+    margin-top: 0.2rem;
+    text-align: left;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.frete-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.frete-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.full-badge-inline {
+    height: 0.95rem;
+    max-width: 55px;
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    margin-left: 2px;
+}
